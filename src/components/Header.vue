@@ -21,13 +21,7 @@
 						<div class="sm__menu">
 							<a href="#" class="toggle-mnu hidden hidden-md"><span></span></a>
 							<div class="small-menu hidden-lg hidden-md">
-								<ul>
-									<li><a href="#">Главная</a></li>
-									<li><a href="#about-me">Обо мне</a></li>
-									<li><a href="#portfolio">Портфолио</a></li>
-									<li><a href="#">Контакты</a></li>
-									<li class="list-item" v-for="(  item, index  ) of   items  ">{{ item.text }}</li>
-								</ul>
+								<TopMenu />
 							</div>
 						</div>
 					</div>

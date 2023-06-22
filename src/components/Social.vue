@@ -1,18 +1,16 @@
 <template>
     <div v-for="icon in icons" :class="icon.class" :key="icon.src">
-        <a :href="icon.href"><img :src="getImgUrl(icon.src)" :alt="icon.alt" /></a>
+        <a :href="icon.href"><img :src="this.getImgUrl(addUrl + icon.src)" :alt="icon.alt" /></a>
     </div>
 </template>
 <script>
+import mixin from './mixin';
 export default {
     name: "Social",
-    methods: {
-        getImgUrl(pic) {
-            return require('../assets/img/icons/' + pic);
-        },
-    },
+    mixins: [mixin],
     data() {
         return {
+            addUrl: "icons/",
             icons: [
                 {
                     class: "icon",

@@ -1,19 +1,16 @@
 <template>
     <a v-for="galaryItem in galaryItems" :key="galaryItem.src" :class="galaryItem.class" :href="galaryItem.href">
-        <img :src="getImgUrl(galaryItem.src)" />
+        <img :src="this.getImgUrl(galaryItem.src)" />
         <div :class="galaryItem.dClass">
             <p>{{ galaryItem.text }}</p>
         </div>
     </a>
 </template>
 <script>
+import mixin from './mixin';
 export default {
     name: "PortfolioItem",
-    methods: {
-        getImgUrl(pic) {
-            return require('../assets/img/' + pic);
-        },
-    },
+    mixins: [mixin],
     data() {
         return {
             galaryItems: [

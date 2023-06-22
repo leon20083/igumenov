@@ -39,7 +39,7 @@ export default {
 	components: {
 		TopMenu,
 		Social
-	}
+	},
 }
 </script>
 
