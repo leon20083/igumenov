@@ -1,0 +1,13 @@
+=mt($time)
+    transition: all $time ease
+
+$blue: #1A73E8
+
+$base-font-size: 18px
+@function em($px, $base: $base-font-size)
+    @return ($px / $base) * 1em
+$maxWidth: 1920
+@mixin font($pcSize, $mobSize)
+    $addSize: $pcSize - $mobSize
+    $maxWidth: $maxWidth - 320
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
