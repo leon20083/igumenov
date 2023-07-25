@@ -14,7 +14,7 @@
       <p>Front-end разработчик</p>
     </div>
     <div class="head-content-right">
-      <img src="../assets/img/my-photo.jpg" alt="" />
+      <img src="../assets/img/i.jpg" alt="" />
     </div>
   </section>
 </template>
