@@ -1,105 +1,115 @@
 <template>
-    <a v-for="galaryItem in galaryItems" :key="galaryItem.src" :class="galaryItem.class" :href="galaryItem.href">
-        <img :src="this.getImgUrl(galaryItem.src)" />
-        <div :class="galaryItem.dClass">
-            <p>{{ galaryItem.text }}</p>
-        </div>
-    </a>
+  <a
+    v-for="galaryItem in galaryItems"
+    :key="galaryItem.src"
+    :class="galaryItem.class"
+    :href="galaryItem.href"
+  >
+    <img :src="this.getImgUrl(galaryItem.src)" />
+    <div :class="galaryItem.dClass">
+      <p>{{ galaryItem.text }}</p>
+    </div>
+  </a>
 </template>
 <script>
-import mixin from './mixin';
+import mixin from "./mixin";
 export default {
-    name: "PortfolioItem",
-    mixins: [mixin],
-    data() {
-        return {
-            galaryItems: [
-                {
-                    id: 1,
-                    class: "item",
-                    href: "https://leon20083.github.io/kinoteatr/",
-                    src: "kinoteatr.png",
-                    dClass: "item-content",
-                    text: "Кинотеатр на REACT",
-                },
-                {
-                    id: 2,
-                    class: "item",
-                    href: "https://leon20083.github.io/BrandName/",
-                    src: "brandname.png",
-                    dClass: "item-content",
-                    text: "Вёрстка по заказу на React",
-                },
-                {
-                    id: 3,
-                    class: "item",
-                    href: "https://leon20083.github.io/bluesollar/",
-                    src: "bluesollar.jpg",
-                    dClass: "item-content",
-                    text: "Строительная компания",
-                },
-                {
-                    id: 4,
-                    class: "item",
-                    href: "https://leon20083.github.io/consultant/",
-                    src: "consultant.jpg",
-                    dClass: "item-content",
-                    text: "Консультант",
-                },
-                {
-                    id: 5,
-                    class: "item",
-                    href: "https://leon20083.github.io/barber/",
-                    src: "baber.jpg",
-                    dClass: "item-content",
-                    text: "Барбер шоп",
-                },
-                {
-                    id: 6,
-                    class: "item",
-                    href: "https://leon20083.github.io/meditations/",
-                    src: "yoga.jpg",
-                    dClass: "item-content",
-                    text: "Сайт о Медитации",
-                },
-                {
-                    id: 7,
-                    class: "item",
-                    href: "https://leon20083.github.io/Real-Estate/",
-                    src: "002FIGMA1.png",
-                    dClass: "item-content",
-                    text: "Real-Estate",
-                },
-                {
-                    id: 8,
-                    class: "item",
-                    href: "https://leon20083.github.io/MYEL-landing/",
-                    src: "002FIGMA2.png",
-                    dClass: "item-content",
-                    text: "MYEL-landing",
-                },
-                {
-                    id: 9,
-                    class: "item",
-                    href: "https://leon20083.github.io/landing-synergy/",
-                    src: "grayscale.png",
-                    dClass: "item-content",
-                    text: "Вёрстка по шаблону фигма сделано меню при пролистывании страницы",
-                },
-                {
-                    id: 10,
-                    class: "item",
-                    href: "https://leon20083.github.io/synergy-project/",
-                    src: "find-firest.png",
-                    dClass: "item-content",
-                    text: "Вёрстка по шаблону фигма",
-                },
-
-            ]
-        }
-    }
-}
+  name: "PortfolioItem",
+  mixins: [mixin],
+  data() {
+    return {
+      galaryItems: [
+        {
+          id: 1,
+          class: "item",
+          href: "https://leon20083.github.io/kemenger-vue/",
+          src: "kemenger.jpg",
+          dClass: "item-content",
+          text: "Заказ, вёрстка по макету Figma, сделано на VUE3",
+        },
+        {
+          id: 2,
+          class: "item",
+          href: "https://leon20083.github.io/kinoteatr/",
+          src: "kinoteatr.png",
+          dClass: "item-content",
+          text: "Кинотеатр на REACT",
+        },
+        {
+          id: 3,
+          class: "item",
+          href: "https://leon20083.github.io/BrandName/",
+          src: "brandname.png",
+          dClass: "item-content",
+          text: "Вёрстка по заказу на React",
+        },
+        {
+          id: 4,
+          class: "item",
+          href: "https://leon20083.github.io/bluesollar/",
+          src: "bluesollar.jpg",
+          dClass: "item-content",
+          text: "Строительная компания",
+        },
+        {
+          id: 5,
+          class: "item",
+          href: "https://leon20083.github.io/consultant/",
+          src: "consultant.jpg",
+          dClass: "item-content",
+          text: "Консультант",
+        },
+        {
+          id: 6,
+          class: "item",
+          href: "https://leon20083.github.io/barber/",
+          src: "baber.jpg",
+          dClass: "item-content",
+          text: "Барбер шоп",
+        },
+        {
+          id: 7,
+          class: "item",
+          href: "https://leon20083.github.io/meditations/",
+          src: "yoga.jpg",
+          dClass: "item-content",
+          text: "Сайт о Медитации",
+        },
+        {
+          id: 8,
+          class: "item",
+          href: "https://leon20083.github.io/Real-Estate/",
+          src: "002FIGMA1.png",
+          dClass: "item-content",
+          text: "Real-Estate",
+        },
+        {
+          id: 9,
+          class: "item",
+          href: "https://leon20083.github.io/MYEL-landing/",
+          src: "002FIGMA2.png",
+          dClass: "item-content",
+          text: "MYEL-landing",
+        },
+        {
+          id: 10,
+          class: "item",
+          href: "https://leon20083.github.io/landing-synergy/",
+          src: "grayscale.png",
+          dClass: "item-content",
+          text: "Вёрстка по шаблону фигма сделано меню при пролистывании страницы",
+        },
+        {
+          id: 11,
+          class: "item",
+          href: "https://leon20083.github.io/synergy-project/",
+          src: "find-firest.png",
+          dClass: "item-content",
+          text: "Вёрстка по шаблону фигма",
+        },
+      ],
+    };
+  },
+};
 </script>
-<style lang="sass">
-
-</style>
+<style lang="sass"></style>

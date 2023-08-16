@@ -10,66 +10,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="gallary">
-					<!-- <a class="item" href="https://leon20083.github.io/kinoteatr/">
-						<img src="../assets/img/kinoteatr.png" alt="kinoteatr" />
-						<div class="item-content">
-							<p>Кинотеатр на REACT</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/BrandName/">
-						<img src="../assets/img/brandname.png" alt="BrandName" />
-						<div class="item-content">
-							<p>Вёрстка по заказу на React</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/bluesollar/">
-						<img src="../assets/img/bluesollar.jpg" alt="Bluesollar" />
-						<div class="item-content">
-							<p>Строительная компания</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/consultant/">
-						<img src="../assets/img/consultant.jpg" alt="Consultant" />
-						<div class="item-content">
-							<p>Консультант</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/barber/">
-						<img src="../assets/img/baber.jpg" alt="Barber-shop" />
-						<div class="item-content">
-							<p>Барбер шоп</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/meditations/">
-						<img src="../assets/img/yoga.jpg" alt="Meditations" />
-						<div class="item-content">
-							<p>Сайт о Медитации</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/Real-Estate/">
-						<img src="../assets/img/002FIGMA1.png" alt="Real-Estate" />
-						<div class="item-content">
-							<p>Real-Estate</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/MYEL-landing/">
-						<img src="../assets/img/002FIGMA2.png" alt="MYEL-landing" />
-						<div class="item-content">
-							<p>MYEL-landing</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/landing-synergy/">
-						<img src="../assets/img/grayscale.png" alt="Grayscale" />
-						<div class="item-content">
-							<p>Вёрстка по шаблону фигма<br />сделано меню при пролистывании страницы</p>
-						</div>
-					</a>
-					<a class="item" href="https://leon20083.github.io/synergy-project/">
-						<img src="../assets/img/find-firest.png" alt="Find-firest" />
-						<div class="item-content">
-							<p>Вёрстка по шаблону фигма</p>
-						</div>
-					</a> -->
 					<PortfolioItem />
 				</div>
 			</div>
